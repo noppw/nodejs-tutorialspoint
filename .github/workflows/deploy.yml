@@ -55,5 +55,5 @@ jobs:
             sudo docker stop nodejs-tutorialspoint-noppawatv || true
             sudo docker rm nodejs-tutorialspoint-noppawatv || true
             sudo docker pull $REGISTRY/$REPOSITORY:$IMAGE_TAG
-            sudo docker run -d --name nodejs-tutorialspoint-noppawatv -p 80:80 $REGISTRY/$REPOSITORY:$IMAGE_TAG
+            sudo docker run -d --name nodejs-tutorialspoint-noppawatv -p 80:8081 $REGISTRY/$REPOSITORY:$IMAGE_TAG
             sudo docker ps -a
