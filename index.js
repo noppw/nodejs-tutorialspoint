@@ -16,6 +16,14 @@ app.get('/', function (req, res) {
    res.send('Hello World');
 })
 
+app.get('/ready', function (req, res) {
+   res.sendStatus(200);
+})
+
+app.get('/live', function (req, res) {
+   res.sendStatus(200);
+})
+
 
 const server = app.listen(8081, function () {
    const host = server.address().address
